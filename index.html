@@ -62,12 +62,20 @@
         }
 
         video {
-            position: absolute; top: 0; left: 0;
-            width: 100%; height: 100%; object-fit: contain; display: none;
-        }
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: none;
+    /* ဒီစာကြောင်းလေးကို ထည့်ပေးပါ */
+    mix-blend-mode: screen; 
+}
 
-        video.active { display: block; }
-
+video.active {
+    display: block;
+}
         h1 { color: var(--text-color); font-size: 1.6rem; margin-bottom: 40px; min-height: 2.4rem; }
 
         .btn-container { display: flex; width: 100%; height: 70px; position: relative; }
